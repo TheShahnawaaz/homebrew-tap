@@ -11,10 +11,8 @@ cask "aura" do
 
   app "Aura.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Aura.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/Aura.app"]
   end
 
   zap trash: [
