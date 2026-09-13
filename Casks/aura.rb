@@ -11,6 +11,12 @@ cask "aura" do
 
   app "Aura.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Aura.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/Aura",
     "~/Library/Caches/com.aura.mac",
