@@ -1,8 +1,8 @@
 cask "aura" do
-  version "1.0.0"
-  sha256 "a7096f211462a594093223fee5301df9d73f63c0d7d258ef918bfa769838ae4c"
+  version :latest
+  sha256 :no_check
 
-  url "https://github.com/TheShahnawaaz/Aura/releases/download/v#{version}/Aura.dmg"
+  url "https://github.com/TheShahnawaaz/Aura/releases/latest/download/Aura.dmg"
   name "Aura"
   desc "Autonomous voice and desktop AI assistant for macOS with fluid camera notch HUD"
   homepage "https://github.com/TheShahnawaaz/Aura"
