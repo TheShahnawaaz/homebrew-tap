@@ -7,7 +7,7 @@ cask "aura" do
   desc "Autonomous voice and desktop AI assistant for macOS with fluid camera notch HUD"
   homepage "https://github.com/TheShahnawaaz/Aura"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Aura.app"
 
